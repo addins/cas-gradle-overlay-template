@@ -41,6 +41,8 @@ repositories {
 
 dependencies {
     compile "org.apereo.cas:cas-server-webapp-tomcat:${project.'cas.version'}@war"
+    compile "org.apereo.cas:cas-server-support-jdbc:${project.'cas.version'}"
+    compile "org.apereo.cas:cas-server-support-jdbc-drivers:${project.'cas.version'}"
 }
 
 task copyConfig(type: Copy) {
